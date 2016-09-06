@@ -1,0 +1,177 @@
+div.container {
+    width: 100%;
+    /*border: 1px solid gray; */
+}
+
+header {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+footer {
+    padding: 1em 1em 1em 0em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    font-family: 'Molengo', sans-serif;    
+}
+
+footer span.logo {
+	text-align: left;
+}
+
+nav {
+    float: left;
+    max-width: 100px;
+    margin: 0;
+    padding: 1em;
+    color: black;
+	font-family: 'Molengo', sans-serif;
+	font-weight: 300;
+	text-transform: lowercase;
+	line-height: 1.7em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+	color: black;
+}
+   
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+
+div.grid {
+    margin-left: 170px;
+    /*
+    border-left: 1px solid gray;
+    padding: 1em;
+    */
+    overflow: hidden;
+    clear: none;
+     -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 0px; /* Firefox */
+    column-gap: 0px;
+}
+
+
+.photo {
+	width:100%;
+}
+
+.cocktail {
+	width:100%;
+}
+
+
+ul.bottomnav {
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    text-align: center;
+    position: inherit;
+    font-family: 'Molengo', sans-serif;
+
+}
+
+ul.bottomnav li {
+	display: inline-block;
+    list-style-type: none;
+    position:relative;
+    padding-left: 5px;
+    font-family: 'Molengo', sans-serif;
+
+}
+
+ul.bottomnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Molengo', sans-serif;
+}
+
+.copyright {
+	text-align: left;
+	vertical-align: bottom;
+	font-family: 'Molengo', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	padding-right: 15px;
+}
+
+
+/* ABOUT PAGE */
+
+
+article {
+    margin-left: 170px;
+    overflow: hidden;
+	font-family: 'Molengo', sans-serif;
+	padding: 40px;
+	line-height: 1.3em;
+	font-size: 1.7em;
+	vertical-align: text-top;
+}
+
+.text {
+	margin-left: 80px;
+	padding-left: 40px;
+	padding-right: 220px;
+	padding-top: 35px;
+	vertical-align: top;
+	width: fixed;
+}
+
+.hero  {
+	width: 40%;
+	margin-right: 100px;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-top: 40px;
+	vertical-align: text-top;
+}
+
+.contact {
+	padding-top: 30px;
+	font-family: 'Molengo', sans-serif;
+	font-size: .6em;
+	line-height: 1.1em;
+}
+
+.contact a {
+	color: black;
+	text-decoration: underline;
+	font-size: inherit;
+	font-style: normal;
+	font-size: .95em;
+}
+
+
+
+/*
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*/
