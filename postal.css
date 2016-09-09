@@ -1,5 +1,7 @@
+
 div.container {
     width: 100%;
+    min-height: 100%;
     /*border: 1px solid gray; */
 }
 
@@ -12,16 +14,29 @@ header {
 }
 
 footer {
-    padding: 1em 1em 1em 0em;
+    padding: 0;
     color: white;
     background-color: black;
-    clear: left;
+    clear: both;
     text-align: center;
-    font-family: 'Molengo', sans-serif;    
+    font-family: 'Molengo', sans-serif;
+    bottom: 0px;
+    vertical-align: middle;
+    line-height: normal;
+    height: 50px;
+    display: block;
+    margin-bottom: -500px;
 }
 
 footer span.logo {
 	text-align: left;
+}
+
+#push {
+	height: 100%;
+	clear: both;
+	bottom: 0px;
+	margin-bottom: 0;
 }
 
 nav {
@@ -81,6 +96,7 @@ ul.bottomnav {
     text-align: center;
     position: inherit;
     font-family: 'Molengo', sans-serif;
+    display: block;
 
 }
 
