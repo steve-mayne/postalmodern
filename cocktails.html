@@ -6,13 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="postal.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-  <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
-  
-  <script> //Google
+    <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
+    
+    <script> //Google
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -21,90 +19,142 @@
   ga('create', 'UA-83912612-1', 'auto');
   ga('send', 'pageview');
   </script>
+    
+    <script>
+    $(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});
+    </script>
+    
+    
+    <script>
+	    $(window).scroll(function() {
+    if ($(this).scrollTop()>15)
+     {
+        $('#topnav').hide();
+     }
+    else
+     {
+      $('#topnav').fadeIn();
+     }
+ });
+	</script>
+	
+	
+
 
 </head>
 
 <body>
 	
-	<!--BEGIN CONTAINER-->
-	<div class="container">
-	
-	  
-		<nav>
-			</br>
-			<p style="padding-top: 5px"><a href="index.html"><img src="images/BRAND_IDENTITY/LOGO/logo_6_cropped.jpg" style="width:120px"></a></p>
-			</br>
-		   <ul>
-			<li><a href="about.html">About</a></li>
-		  	<li><a href="index.html">Landmarks</a></li>
-		    <li><a href="cocktails.html">Cocktails</a></li>
-		    <li><a href="https://society6.com/tamaramayne" target="_blank">Shop</a></li>
-		  </ul>
-		</nav>
-		
-		<div class="grid">
-		 
-		 <!--POSITION A1-->
-			<div class="cocktail">
+	<div class="page-container">
+  
+	<!-- top navbar -->
+    <div id="topnav" class="navbar  navbar-fixed-top" role="navigation">
+       <div class="container">
+    	<div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+          <a class="navbar-brand" href="#"></a>
+    	</div>
+       </div>
+    </div>
+      
+    <div class="container">
+      
+      
+      <div class="row row-offcanvas row-offcanvas-left no-gutters">
+        
+        <!-- sidebar -->
+        <div class="col-xs-6 col-sm-3 col-m-3 sidebar-offcanvas" id="sidebar" role="navigation">
+	        <p><a href="index.html"><img src="images/BRAND_IDENTITY/LOGO/logo_6_cropped.jpg" id="sidebar-logo"></a></p>
+            <ul class="nav-list">
+              	<li><a href="about.html">About</a></li>
+			  	<li><a href="index.html">Landmarks</a></li>
+			    <li><a href="cocktails.html">Cocktails</a></li>
+			    <li><a href="https://society6.com/tamaramayne" target="_blank">Shop</a></li>              
+			</ul>
+        </div>
+  	
+        <!-- main area -->
+			<!--ROW 1-->
+        <div class="col-xs-6 col-sm-3 col-m-3">  
+          <div class="cocktail">
 			      <a href="#"><img src="images/COCKTAILS/SQ__0000_Greyhound_Cocktail_Illustration.jpg" class="img-responsive margin" alt="Greyhound Cocktail Art Work" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0000_Greyhound_Cocktail_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0000_Greyhound_Cocktail_Illustration.jpg'"></a>
 			    </div>
-			
-			
-			<!--POSITION A2-->
-			<div class="cocktail">
+        </div><!-- /.col-xs-12 main -->
+        
+          <div class="col-xs-6 col-sm-3 col-m-3">
+          <div class="cocktail">
 			      <a href="#"><img src="images/COCKTAILS/SQ__0001_Cranberry_Margarita_Illustrations.jpg" class="img-responsive margin" alt="Cranberry Margarita Art Work" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0001_Cranberry_Margarita_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0001_Cranberry_Margarita_Illustrations.jpg'"></a>
 			    </div>
-			
-			
-			<!--POSITION A3-->
-			    <div class="cocktail">
+	     </div><!-- /.col-xs-12 main -->
+          
+          <div class="col-xs-6 col-sm-3 col-m-3">
+	           <div class="cocktail">
 			      <a href="#"><img src="images/COCKTAILS/SQ__0002_Peppermint_Hot_Chocolate_Illustration.jpg" class="img-responsive margin" alt="Peppermint Hot Chocolate Art Work" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0002_Peppermint_Hot_Chocolate_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0002_Peppermint_Hot_Chocolate_Illustration.jpg'"></a>
 			    </div>
-			 
-			 
-			<!--POSITION B1--> 
-			    <div class="cocktail">
-			      <a href="#"><img src="images/COCKTAILS/SQ__0003_Strawberry_Lemonade_Illustration.jpg" class="img-responsive margin" alt="Greyhound Cocktail" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0003_Strawberry_Lemonade_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0003_Strawberry_Lemonade_Illustration.jpg'"></a>
+          </div><!-- /.col-xs-12 main -->
+        
+         
+    
+    
+    		<!-- ROW 2-->
+	    <div class="col-xs-6 col-sm-3 col-m-3 sidebar-offcanvas" id="sidebar" role="navigation"><p class="blankspace"></p></div>
+	    
+	    	<div class="col-xs-6 col-sm-3 col-m-3">
+	          <div class="cocktail">
+			      <a href="#"><img src="images/COCKTAILS/SQ__0003_Strawberry_Lemonade_Illustration.jpg" class="img-responsive margin" alt="Strawberry Lemonade Cocktail Art Work" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0003_Strawberry_Lemonade_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0003_Strawberry_Lemonade_Illustration.jpg'"></a>
 			    </div>
-			 
-			<!--POSITION B2-->   
-			    <div class="cocktail">
-			      <a href="#"><img src="images/COCKTAILS/SQ__0004_Mulled_Cider_Illustration.jpg" class="img-responsive margin" alt="Greyhound Cocktail" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0004_Mulled_Cider_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0004_Mulled_Cider_Illustration.jpg'"></a>
+	        </div><!-- /.col-xs-12 main -->
+	        
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+				      <div class="cocktail">
+			      <a href="#"><img src="images/COCKTAILS/SQ__0004_Mulled_Cider_Illustration.jpg" class="img-responsive margin" alt="Mulled Cide Art Work" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0004_Mulled_Cider_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0004_Mulled_Cider_Illustration.jpg'"></a>
+			    	</div>
+		     </div><!-- /.col-xs-12 main -->
+	          
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+		           <div class="cocktail">
+			      <a href="#"><img src="images/COCKTAILS/SQ__0005_Grapefruit_Rosemary_Cocktail_Illustration.jpg" class="img-responsive margin" alt="Grapefruit Cocktail With Rosemary Art Work" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0005_Grapefruit_Rosemary_Cocktail_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0005_Grapefruit_Rosemary_Cocktail_Illustration.jpg'"></a>
 			    </div>
-			
-			
-			<!--POSITION B3-->      
-			   <div class="cocktail">
-			      <a href="#"><img src="images/COCKTAILS/SQ__0005_Grapefruit_Rosemary_Cocktail_Illustration.jpg" class="img-responsive margin" alt="Greyhound Cocktail" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0005_Grapefruit_Rosemary_Cocktail_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0005_Grapefruit_Rosemary_Cocktail_Illustration.jpg'"></a>
+	          </div><!-- /.col-xs-12 main -->
+    
+    
+    		<!-- ROW 3-->
+	    <div class="col-xs-6 col-sm-3 col-m-3 sidebar-offcanvas" id="sidebar" role="navigation"><p class="blankspace"></p></div>
+	    
+	    	<div class="col-xs-6 col-sm-3 col-m-3">
+	          <div class="cocktail">
+			      <a href="#"><img src="images/COCKTAILS/SQ__0006_Pomegranate_Spritzer_Illustration.jpg" class="img-responsive margin" alt="Pomegranate Spritzer Art Work" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0006_Pomegranate_Spritzer_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0006_Pomegranate_Spritzer_Illustration.jpg'"></a>
 			    </div>
-			    
-			<!--POSITION C1-->      
-			   <div class="cocktail">
-			      <a href="#"><img src="images/COCKTAILS/SQ__0006_Pomegranate_Spritzer_Illustration.jpg" class="img-responsive margin" alt="Greyhound Cocktail" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0006_Pomegranate_Spritzer_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0006_Pomegranate_Spritzer_Illustration.jpg'"></a>
+	        </div><!-- /.col-xs-12 main -->
+	        
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+				      <div class="cocktail">
+			      <a href="#"><img src="images/COCKTAILS/SQ__0007_Eggnog_Illustration.jpg" class="img-responsive margin" alt="Eggnog Art Work" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0007_Eggnog_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0007_Eggnog_Illustration.jpg'"></a>
 			    </div>
-			    
-			    
-			<!--POSITION C2-->      
-			   <div class="cocktail">
-			      <a href="#"><img src="images/COCKTAILS/SQ__0007_Eggnog_Illustration.jpg" class="img-responsive margin" alt="Greyhound Cocktail" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0007_Eggnog_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0007_Eggnog_Illustration.jpg'"></a>
+		     </div><!-- /.col-xs-12 main -->
+	          
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+		           <div class="cocktail">
+			      <a href="#"><img src="images/COCKTAILS/SQ__0008_Cherry_Spritzer_Illustration.jpg" class="img-responsive margin" alt="Cherry Spritzer Art Work" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0008_Cherry_Spritzer_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0008_Cherry_Spritzer_Illustration.jpg'"></a>
 			    </div>
+	          </div><!-- /.col-xs-12 main -->
+    
+    
+      </div> <!--END ROW-->
+  </div><!--/.container-->
+</div><!--/.page-container-->
+	 	
+	 	
+	 	<div id="cocktails-page-footer-margin"></div><!--A LITTLE CUSHION-->
 
-
-			<!--POSITION C3-->      
-			   <div class="cocktail">
-			      <a href="#"><img src="images/COCKTAILS/SQ__0008_Cherry_Spritzer_Illustration.jpg" class="img-responsive margin" alt="Greyhound Cocktail" onmouseover="this.src='images/COCKTAILS_FRAMED/SQ__0008_Cherry_Spritzer_Illustration_Framed.jpg'" onmouseout="this.src='images/COCKTAILS/SQ__0008_Cherry_Spritzer_Illustration.jpg'"></a>
-			    </div>
-
-		
-		</div> <!--END GRID-->
-		
-		
-		<div id="push"></div>
-		
-		
-	
-	</div> 
-	<!--END CONTAINER-->
 	
 	<footer>
 			<ul class="bottomnav">
@@ -116,7 +166,9 @@
 				</ul>
 		</footer>
 	
+	</div> 
 	
-
+	
+	
 </body>
 </html>

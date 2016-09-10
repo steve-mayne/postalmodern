@@ -1,45 +1,16 @@
-
-div.container {
-    width: 100%;
-    min-height: 100%;
-    /*border: 1px solid gray; */
-}
-
-header {
+/* header {
     padding: 1em;
     color: white;
     background-color: black;
     clear: left;
     text-align: center;
 }
+*/
 
-footer {
-    padding: 0;
-    color: white;
-    background-color: black;
-    clear: both;
-    text-align: center;
-    font-family: 'Molengo', sans-serif;
-    bottom: 0px;
-    vertical-align: middle;
-    line-height: normal;
-    height: 50px;
-    display: block;
-    margin-bottom: -500px;
-}
 
-footer span.logo {
-	text-align: left;
-}
 
-#push {
-	height: 100%;
-	clear: both;
-	bottom: 0px;
-	margin-bottom: 0;
-}
 
-nav {
+/* nav {
     float: left;
     max-width: 100px;
     margin: 0;
@@ -65,20 +36,122 @@ nav ul a {
 
 div.grid {
     margin-left: 170px;
-    /*
+   
     border-left: 1px solid gray;
     padding: 1em;
-    */
     overflow: hidden;
     clear: none;
-     -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
+     -webkit-column-count: 3; /* Chrome, Safari, Opera 
+    -moz-column-count: 3; /* Firefox 
     column-count: 3;
-    -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 0px; /* Firefox */
+    -webkit-column-gap: 0px; /* Chrome, Safari, Opera 
+    -moz-column-gap: 0px; /* Firefox 
     column-gap: 0px;
 }
+*/
 
+
+
+div.container {
+    width: 100%;
+}
+
+
+
+@import url("http://bootswatch.com/yeti/bootstrap.min.css");
+
+@import url("http://bootswatch.com/paper/bootstrap.min.css");
+
+@import url("http://bootswatch.com/journal/bootstrap.min.css");
+
+@import url("http://bootswatch.com/darkly/bootstrap.min.css");
+
+@import url("http://bootswatch.com/cosmo/bootstrap.min.css");
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#sidebar-logo {
+	width: 160px;
+	padding-left: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  #sidebar-logo {
+	  width: 140px;
+	  padding-left: 40px;
+	  }
+}
+
+@media screen and (max-width: 320px) {
+  #sidebar-logo {
+	  padding-left: 40px;
+	  width: 100px;
+	  }
+}
+
+#top-nav {
+	border: none;
+}
+
+/*
+.text-center {
+  padding-top: 20px;
+}
+.col-xs-6 {
+  background-color: #fff;
+}*/
+
+
+#sidebar {
+	height: 100%;
+	padding-right: 0;
+	vertical-align: text-top;
+	text-align: left;
+	/* padding-top: 20px; */
+	
+}
+
+#sidebar a {
+	text-decoration: none;
+	color: black;
+	background-color: none;
+}
+
+#sidebar :hover {
+	color: black;
+	background: none;
+}
+
+#sidebar .nav {
+  width: 95%;
+  vertical-align: text-top;
+}
+
+.nav-list ul {
+	text-align: left;
+}
+
+.nav-list li {
+	list-style: none;
+  	font-family: 'Molengo', sans-serif;
+	font-weight: 300;
+	text-transform: lowercase;
+	line-height: 1.3em;
+	text-align: left;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+#sidebar li :hover{
+  text-decoration: underline;
+}
+
+
+
+/* grid and photo layouts */
 
 .photo {
 	width:100%;
@@ -89,6 +162,58 @@ div.grid {
 }
 
 
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.no-gutters > [class^="col-"],
+.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.blankspace {
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 320px) {
+	.blankspace {
+		display: none;
+	}
+}
+
+
+/* footer styling */
+footer {
+	padding: 1em 1em 1em 0em;
+	color: white;
+	font-family: 'Molengo', sans-serif; 
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1em;
+	background-color: black;
+	text-align: center;
+	vertical-align: middle;
+	height: 60px;
+	clear: both;
+}
+
+footer span.logo {
+	text-align: left;
+}
+
+#about-page-footer-margin {
+	margin: 10px 0 0 10px;
+	clear: both;
+}
+
+#cocktails-page-footer-margin {
+	clear: left;
+	height: 30px;
+}
+
 ul.bottomnav {
     width: 100%;
     text-align: center;
@@ -96,7 +221,6 @@ ul.bottomnav {
     text-align: center;
     position: inherit;
     font-family: 'Molengo', sans-serif;
-    display: block;
 
 }
 
@@ -113,7 +237,7 @@ ul.bottomnav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 16px;
     text-decoration: none;
     font-family: 'Molengo', sans-serif;
 }
@@ -123,46 +247,61 @@ ul.bottomnav li a {
 	vertical-align: bottom;
 	font-family: 'Molengo', sans-serif;
 	font-weight: 300;
-	font-size: 12px;
+	font-size: .8em;
 	padding-right: 15px;
 }
 
+@media only screen and (max-width: 535px) {
+	.copyright {
+		display: none;
+	}
+}
 
-/* ABOUT PAGE */
+@media only screen and (max-width: 535px) {
+	ul.bottomnav {
+		margin-left: -40px;
+	}
+}
+/* end footer styling */
 
 
-article {
-    margin-left: 170px;
+/* about page content */
+.about-text {
     overflow: hidden;
 	font-family: 'Molengo', sans-serif;
-	padding: 40px;
+	padding: 0px 40px 0px 20px;
 	line-height: 1.3em;
 	font-size: 1.7em;
 	vertical-align: text-top;
 }
 
-.text {
-	margin-left: 80px;
-	padding-left: 40px;
-	padding-right: 220px;
-	padding-top: 35px;
-	vertical-align: top;
-	width: fixed;
+@media only screen and (max-width: 768px) {
+  .about-text {
+    font-size: 1.3em;
+    line-height: 1.1em;
+  }
 }
 
+@media only screen and (max-width: 320px) {
+  .about-text {
+    font-size: 1.1em;
+    line-height: 1.1em;
+    padding: 0px 20px 0px 10px;
+    margin-bottom: 20px;
+  }
+}
+
+
 .hero  {
-	width: 40%;
-	margin-right: 100px;
-	padding-right: 40px;
-	padding-left: 40px;
-	padding-top: 40px;
+	width: 90%;
+	padding-bottom: 30px;
 	vertical-align: text-top;
 }
 
 .contact {
-	padding-top: 30px;
+	padding-bottom: 40px;
 	font-family: 'Molengo', sans-serif;
-	font-size: .6em;
+	font-size: 1em;
 	line-height: 1.1em;
 }
 
@@ -173,21 +312,61 @@ article {
 	font-style: normal;
 	font-size: .95em;
 }
+/* end about page content*/
 
 
+/* collapsed sidebar styles */
+.icon-bar {
+	color: black;
+	border: 1px solid black;
+}
 
-/*
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-*/
+body {
+  padding-top: 51px; 
+  position: relative;
+  min-height: 100%;
+}
+
+.page-container {
+	margin-bottom: 30px;
+	clear: both;
+}
+
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
+  }
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -41.6%;
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 41.6%;
+  }
+  #sidebar {
+    padding-top:0;
+  }
+  
+  
+}

@@ -21,192 +21,284 @@
   ga('create', 'UA-83912612-1', 'auto');
   ga('send', 'pageview');
   </script>
+  
+  <script>
+    $(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});
+    </script>
+    
+    
+    <script>
+	    $(window).scroll(function() {
+    if ($(this).scrollTop()>15)
+     {
+        $('#topnav').hide();
+     }
+    else
+     {
+      $('#topnav').fadeIn();
+     }
+ });
+	</script>
 
 </head>
 
 <body>
 	
-	<!--BEGIN CONTAINER-->
-	<div class="container">
-	
-	  
-		<nav>
-			</br>
-			<p style="padding-top: 5px"><a href="index.html"><img src="images/BRAND_IDENTITY/LOGO/logo_6_cropped.jpg" style="width:120px"></a></p>
-			</br>
-		   <ul>
-			<li><a href="about.html">About</a></li>
-		  	<li><a href="index.html">Landmarks</a></li>
-		    <li><a href="cocktails.html">Cocktails</a></li>
-		    <li><a href="https://society6.com/tamaramayne" target="_blank">Shop</a></li>
-		  </ul>
-		</nav>
-		
-		<div class="grid">
+	<div class="page-container">
+  
+	<!-- top navbar -->
+    <div id="topnav" class="navbar  navbar-fixed-top" role="navigation">
+       <div class="container">
+    	<div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+          <a class="navbar-brand" href="#"></a>
+    	</div>
+       </div>
+    </div>
+      
+    <div class="container">
+      
+      
+      <div class="row row-offcanvas row-offcanvas-left no-gutters">
+        
+        <!-- sidebar -->
+        <div class="col-xs-6 col-sm-3 col-m-3 sidebar-offcanvas" id="sidebar" role="navigation">
+	        <p><a href="index.html"><img src="images/BRAND_IDENTITY/LOGO/logo_6_cropped.jpg" id="sidebar-logo"></a></p>
+            <ul class="nav-list">
+              	<li><a href="about.html">About</a></li>
+			  	<li><a href="index.html">Landmarks</a></li>
+			    <li><a href="cocktails.html">Cocktails</a></li>
+			    <li><a href="https://society6.com/tamaramayne" target="_blank">Shop</a></li>              
+			</ul>
+        </div>
+  	
+        <!-- main area -->
 			
-			<!--POSITION A1-->
-			<div class="photo">
+			<!--ROW 1-->
+        <div class="col-xs-6 col-sm-3 col-m-3">  
+          <div class="photo">
 			      <a href="#"><img src="images/CITY_LANDMARKS/_0004_Seattle_Monorail.jpg" class="img-responsive margin" alt="Seattle Monorail" onmouseover="this.src='images/LANDMARKS_FRAMED/_0004_Seattle_Monorail_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0004_Seattle_Monorail.jpg'"></a>
 			    </div>
-			
-			
-			<!--POSITION A2-->
-			<div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0012_Painted_Ladies.jpg" class="img-responsive margin" alt="Painted Ladies" onmouseover="this.src='images/LANDMARKS_FRAMED/_0012_Painted_Ladies_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0012_Painted_Ladies.jpg'"></a>
-			    </div>
-			
-			
-			<!--POSITION A3-->
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0021_Willis_Tower.jpg" class="img-responsive margin" alt="Willis Tower" onmouseover="this.src='images/LANDMARKS_FRAMED/_0021_Willis_Tower_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0021_Willis_Tower.jpg'"></a>
-			    </div>
-			 
-			 
-			<!--POSITION A4--> 
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0014_Country_Music_Hall_Of_Fame.jpg" class="img-responsive margin" alt="Country Music Hall of Fame" onmouseover="this.src='images/LANDMARKS_FRAMED/_0014_Country_Music_Hall_Of_Fame_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0014_Country_Music_Hall_Of_Fame.jpg'"></a>
-			    </div>
-			 
-			<!--POSITION A5-->   
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0020_Pineapple_Fountain_Charleston.jpg" class="img-responsive margin" alt="Pineapple Fountain Charleston" onmouseover="this.src='images/LANDMARKS_FRAMED/_0020_Pineapple_Fountain_Charleston_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0020_Pineapple_Fountain_Charleston.jpg'"></a>
-			    </div>
-			
-			
-			<!--POSITION A6-->      
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0010_Pittock_House.jpg" class="img-responsive margin" alt="Pittock House" onmouseover="this.src='images/LANDMARKS_FRAMED/_0010_Pittock_House_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0010_Pittock_House.jpg'"></a>
-			    </div>
-			
-			
-			<!--POSITION A7-->          
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0027_University_Of_Texas_Tower.jpg" class="img-responsive margin" alt="Empire State Building" onmouseover="this.src='images/LANDMARKS_FRAMED/_0027_University_Of_Texas_Tower_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0027_University_Of_Texas_Tower.jpg'"></a>
-			    </div>
-			    
-			
-			<!--POSITION A8-->
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0002_Customs_House_Charleston.jpg" class="img-responsive margin" alt="Customs House Charleston" onmouseover="this.src='images/LANDMARKS_FRAMED/_0002_Customs_House_Charleston_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0002_Customs_House_Charleston.jpg'"></a>
-			    </div>
-			
-			
-			<!--POSITION A9-->   
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0001_White_House.jpg" class="img-responsive margin" alt="White House" onmouseover="this.src='images/LANDMARKS_FRAMED/_0001_White_House_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0001_White_House.jpg'"></a>
-			    </div>
-			
-			
-			<!--POSITION B1-->    			   
-		 		<div class="photo">
+        </div><!-- /.col-xs-12 main -->
+        
+          <div class="col-xs-6 col-sm-3 col-m-3">
+          <div class="photo">
 			      <a href="#"><img src="images/CITY_LANDMARKS/_0007_Space_Needle.jpg" class="img-responsive margin" alt="Space Needle" onmouseover="this.src='images/LANDMARKS_FRAMED/_0007_Space_Needle_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0007_Space_Needle.jpg'"></a>
 			    </div>
-			
-			<!--POSITION B2-->    
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0013_Coit_Tower.jpg" class="img-responsive margin" alt="Coit Tower" onmouseover="this.src='images/LANDMARKS_FRAMED/_0013_Coit_Tower_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0013_Coit_Tower.jpg'"></a>
-			    </div>
-			
-			
-			<!--POSITION B3-->    
-			    <div class="photo"> 
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0000_Washington_Monument.jpg" class="img-responsive margin" alt="Washington Monument" onmouseover="this.src='images/LANDMARKS_FRAMED/_0000_Washington_Monument_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0000_Washington_Monument.jpg'"></a>
-			    </div>
-			
-			<!--POSITION B4-->    
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0016_Disney_Concert_Hall.jpg" class="img-responsive margin" alt="Disney Concert Hall" onmouseover="this.src='images/LANDMARKS_FRAMED/_0016_Disney_Concert_Hall_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0016_Disney_Concert_Hall.jpg'"></a>
-			    </div>
-			
-			<!--POSITION B5-->    
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0003_Bens_Chili_Bowl.jpg" class="img-responsive margin" alt="Bens Chili Bowl" onmouseover="this.src='images/LANDMARKS_FRAMED/_0003_Bens_Chili_Bowl_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0003_Bens_Chili_Bowl.jpg'"></a>
-			    </div>
-			    
-			
-			<!--POSITION B6-->
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0018_Capital_Records_Building.jpg" class="img-responsive margin" alt="Capital Records Buildling" onmouseover="this.src='images/LANDMARKS_FRAMED/_0018_Capital_Records_Building_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0018_Capital_Records_Building.jpg'"></a>
-			    </div>			
-			
-			<!--POSITION B7-->    
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0006_Bicycle.jpg" class="img-responsive margin" alt="Bicycle" onmouseover="this.src='images/LANDMARKS_FRAMED/_0006_Bicycle_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0006_Bicycle.jpg'"></a>
-			    </div>
-			
-			
-			<!--POSITION B8-->    
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0009_Taxi_Cab.jpg" class="img-responsive margin" alt="Taxi Cab" onmouseover="this.src='images/LANDMARKS_FRAMED/_0009_Taxi_Cab_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0009_Taxi_Cab.jpg'"></a>
-			    </div>
-			
-			
-			<!--POSITION B9-->    
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0023_Ryman_Auditorium_Grand_Ol_Opry.jpg" class="img-responsive margin" alt="Ryman Auditorium Grand Ol Opry" onmouseover="this.src='images/LANDMARKS_FRAMED/_0023_Ryman_Auditorium_Grand_Ol_Opry_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0023_Ryman_Auditorium_Grand_Ol_Opry.jpg'"></a>
-			    </div>
-			
-			
-			<!--POSITION C1-->    
-			    <div class="photo">
+	     </div><!-- /.col-xs-12 main -->
+          
+          <div class="col-xs-6 col-sm-3 col-m-3">
+	           <div class="photo">
 			      <a href="#"><img src="images/CITY_LANDMARKS/_0008_Puget_Sound_Ferry.jpg" class="img-responsive margin" alt="Puget Sound Ferry" onmouseover="this.src='images/LANDMARKS_FRAMED/_0008_Puget_Sound_Ferry_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0008_Puget_Sound_Ferry.jpg'"></a>
 			    </div>
-			
-			
-			<!--POSITION C2-->     
-			    <div class="photo">
+          </div><!-- /.col-xs-12 main -->
+        
+         
+    
+    
+    		<!-- ROW 2-->
+	    <div class="col-xs-6 col-sm-3 col-m-3 sidebar-offcanvas" id="sidebar" role="navigation"><p class="blankspace"></p></div>
+	    
+	    	<div class="col-xs-6 col-sm-3 col-m-3">
+	          <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0012_Painted_Ladies.jpg" class="img-responsive margin" alt="Painted Ladies" onmouseover="this.src='images/LANDMARKS_FRAMED/_0012_Painted_Ladies_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0012_Painted_Ladies.jpg'"></a>
+			    </div>
+	        </div><!-- /.col-xs-12 main -->
+	        
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+				      <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0013_Coit_Tower.jpg" class="img-responsive margin" alt="Coit Tower" onmouseover="this.src='images/LANDMARKS_FRAMED/_0013_Coit_Tower_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0013_Coit_Tower.jpg'"></a>
+			    </div>
+		     </div><!-- /.col-xs-12 main -->
+	          
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+		           <div class="photo">
 			      <a href="#"><img src="images/CITY_LANDMARKS/_0025_Japanese_Botanical_Garden_Portland.jpg" class="img-responsive margin" alt="Japanese Botanical Garden Portland" onmouseover="this.src='images/LANDMARKS_FRAMED/_0025_Japanese_Botanical_Garden_Portland_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0025_Japanese_Botanical_Garden_Portland.jpg'"></a>
 			    </div>
-			
-			
-			<!--POSITION C3-->     
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0022_Corn_Cob_Building_Chicago.jpg" class="img-responsive margin" alt=" Corn Cob Buildings Chicago" onmouseover="this.src='images/LANDMARKS_FRAMED/_0022_Corn_Cob_Building_Chicago_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0022_Corn_Cob_Building_Chicago.jpg'"></a>
+	          </div><!-- /.col-xs-12 main -->
+    
+    
+    
+    		<!-- ROW 3-->
+	    <div class="col-xs-6 col-sm-3 col-m-3 sidebar-offcanvas" id="sidebar" role="navigation"><p class="blankspace"></p></div>
+	    
+	    	<div class="col-xs-6 col-sm-3 col-m-3">
+	          <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0021_Willis_Tower.jpg" class="img-responsive margin" alt="Willis Tower" onmouseover="this.src='images/LANDMARKS_FRAMED/_0021_Willis_Tower_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0021_Willis_Tower.jpg'"></a>
 			    </div>
-			
-			
-			<!--POSITION C4-->     
-			    <div class="photo">
+	        </div><!-- /.col-xs-12 main -->
+	        
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+				      <div class="photo"> 
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0000_Washington_Monument.jpg" class="img-responsive margin" alt="Washington Monument" onmouseover="this.src='images/LANDMARKS_FRAMED/_0000_Washington_Monument_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0000_Washington_Monument.jpg'"></a>
+			    </div>
+		     </div><!-- /.col-xs-12 main -->
+	          
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+		           <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0022_Corn_Cob_Building_Chicago.jpg" class="img-responsive margin" alt="Corn Cob Buildings Chicago" onmouseover="this.src='images/LANDMARKS_FRAMED/_0022_Corn_Cob_Building_Chicago_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0022_Corn_Cob_Building_Chicago.jpg'"></a>
+			    </div>
+	          </div><!-- /.col-xs-12 main -->
+	          
+	          
+	          
+	        <!-- ROW 4-->
+	    <div class="col-xs-6 col-sm-3 col-m-3 sidebar-offcanvas" id="sidebar" role="navigation"><p class="blankspace"></p></div>
+	    
+	    	<div class="col-xs-6 col-sm-3 col-m-3">
+	          <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0023_Ryman_Auditorium_Grand_Ol_Opry.jpg" class="img-responsive margin" alt="Ryman Auditorium Grand Ol Opry" onmouseover="this.src='images/LANDMARKS_FRAMED/_0023_Ryman_Auditorium_Grand_Ol_Opry_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0023_Ryman_Auditorium_Grand_Ol_Opry.jpg'"></a>
+			    </div>
+	        </div><!-- /.col-xs-12 main -->
+	        
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+				      <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0016_Disney_Concert_Hall.jpg" class="img-responsive margin" alt="Disney Concert Hall" onmouseover="this.src='images/LANDMARKS_FRAMED/_0016_Disney_Concert_Hall_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0016_Disney_Concert_Hall.jpg'"></a>
+			    </div>
+		     </div><!-- /.col-xs-12 main -->
+	          
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+		           <div class="photo">
 			      <a href="#"><img src="images/CITY_LANDMARKS/_0019_Graumans_Chinese_Theater.jpg" class="img-responsive margin" alt="Graumans Chinese Theater" onmouseover="this.src='images/LANDMARKS_FRAMED/_0019_Graumans_Chinese_Theater_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0019_Graumans_Chinese_Theater.jpg'"></a>
 			    </div>
-			
-			
-			<!--POSITION C5-->     
-			    <div class="photo">
+	          </div><!-- /.col-xs-12 main -->
+    
+    
+    
+			  <!-- ROW 5-->
+	    <div class="col-xs-6 col-sm-3 col-m-3 sidebar-offcanvas" id="sidebar" role="navigation"><p class="blankspace"></p></div>
+	    
+	    	<div class="col-xs-6 col-sm-3 col-m-3">
+	          <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0020_Pineapple_Fountain_Charleston.jpg" class="img-responsive margin" alt="Pineapple Fountain Charleston" onmouseover="this.src='images/LANDMARKS_FRAMED/_0020_Pineapple_Fountain_Charleston_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0020_Pineapple_Fountain_Charleston.jpg'"></a>
+			    </div>
+	        </div><!-- /.col-xs-12 main -->
+	        
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+				      <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0003_Bens_Chili_Bowl.jpg" class="img-responsive margin" alt="Bens Chili Bowl" onmouseover="this.src='images/LANDMARKS_FRAMED/_0003_Bens_Chili_Bowl_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0003_Bens_Chili_Bowl.jpg'"></a>
+			    </div>
+		     </div><!-- /.col-xs-12 main -->
+	          
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+		           <div class="photo">
 			      <a href="#"><img src="images/CITY_LANDMARKS/_0011_Cable_Car.jpg" class="img-responsive margin" alt="Cable Car" onmouseover="this.src='images/LANDMARKS_FRAMED/_0011_Cable_Car_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0011_Cable_Car.jpg'"></a>
 			    </div>
-			
-			
-			<!--POSITION C6-->     
-			    <div class="photo">
-			      <a href="#"><img src="images/CITY_LANDMARKS/_0015_Batman_Building.jpg" class="img-responsive margin" alt="Batman Building" onmouseover="this.src='images/LANDMARKS_FRAMED/_0015_Batman_Building_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0015_Batman_Building.jpg'"></a>
+	          </div><!-- /.col-xs-12 main -->
+	          
+	          
+	          
+	          <!-- ROW 6-->
+	    <div class="col-xs-6 col-sm-3 col-m-3 sidebar-offcanvas" id="sidebar" role="navigation"><p class="blankspace"></p></div>
+	    
+	    	<div class="col-xs-6 col-sm-3 col-m-3">
+	          <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0010_Pittock_House.jpg" class="img-responsive margin" alt="Pittock House Portland" onmouseover="this.src='images/LANDMARKS_FRAMED/_0010_Pittock_House_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0010_Pittock_House.jpg'"></a>
 			    </div>
-			
-			
-			<!--POSITION C7-->     
-			     <div class="photo">
+	        </div><!-- /.col-xs-12 main -->
+	        
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+				      <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0018_Capital_Records_Building.jpg" class="img-responsive margin" alt="Capital Records Building" onmouseover="this.src='images/LANDMARKS_FRAMED/_0018_Capital_Records_Building_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0018_Capital_Records_Building.jpg'"></a>
+			    </div>
+		     </div><!-- /.col-xs-12 main -->
+	          
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+		           <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0015_Batman_Building.jpg" class="img-responsive margin" alt="Batman Building Nashville" onmouseover="this.src='images/LANDMARKS_FRAMED/_0015_Batman_Building_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0015_Batman_Building.jpg'"></a>
+			    </div>
+	          </div><!-- /.col-xs-12 main -->
+	          
+	          
+	          
+	          
+	          <!-- ROW 7-->
+	    <div class="col-xs-6 col-sm-3 col-m-3 sidebar-offcanvas" id="sidebar" role="navigation"><p class="blankspace"></p></div>
+	    
+	    	<div class="col-xs-6 col-sm-3 col-m-3">
+	          <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0027_University_Of_Texas_Tower.jpg" class="img-responsive margin" alt="University of Texas UT Clock Tower" onmouseover="this.src='images/LANDMARKS_FRAMED/_0027_University_Of_Texas_Tower_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0027_University_Of_Texas_Tower.jpg'"></a>
+			    </div>
+	        </div><!-- /.col-xs-12 main -->
+	        
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+				      <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0006_Bicycle.jpg" class="img-responsive margin" alt="Bicycle" onmouseover="this.src='images/LANDMARKS_FRAMED/_0006_Bicycle_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0006_Bicycle.jpg'"></a>
+			    </div>
+		     </div><!-- /.col-xs-12 main -->
+	          
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+		           <div class="photo">
 			      <a href="#"><img src="images/CITY_LANDMARKS/_0005_Texas_State_Capitol.jpg" class="img-responsive margin" alt="Texas State Capitol" onmouseover="this.src='images/LANDMARKS_FRAMED/_0005_Texas_State_Capitol_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0005_Texas_State_Capitol.jpg'"></a>
 			    </div>
-			
-			
-			<!--POSITION C8-->     
-			    <div class="photo">
+	          </div><!-- /.col-xs-12 main -->
+	          
+	          
+	          
+	          <!-- ROW 8-->
+	    <div class="col-xs-6 col-sm-3 col-m-3 sidebar-offcanvas" id="sidebar" role="navigation"><p class="blankspace"></p></div>
+	    
+	    	<div class="col-xs-6 col-sm-3 col-m-3">
+	          <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0002_Customs_House_Charleston.jpg" class="img-responsive margin" alt="Customs House Charleston" onmouseover="this.src='images/LANDMARKS_FRAMED/_0002_Customs_House_Charleston_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0002_Customs_House_Charleston.jpg'"></a>
+			    </div>
+	        </div><!-- /.col-xs-12 main -->
+	        
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+				      <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0009_Taxi_Cab.jpg" class="img-responsive margin" alt="Taxi Cab New York" onmouseover="this.src='images/LANDMARKS_FRAMED/_0009_Taxi_Cab_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0009_Taxi_Cab.jpg'"></a>
+			    </div>
+		     </div><!-- /.col-xs-12 main -->
+	          
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+			      <div class="photo">
 			      <a href="#"><img src="images/CITY_LANDMARKS/_0024_Rainbow_Row_Charleston.jpg" class="img-responsive margin" alt="Rainbow Row Charleston" onmouseover="this.src='images/LANDMARKS_FRAMED/_0024_Rainbow_Row_Charleston_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0024_Rainbow_Row_Charleston.jpg'"></a>
 			    </div>
-			
-			
-			<!--POSITION C9-->     
-			    <div class="photo">
+	          </div><!-- /.col-xs-12 main -->
+	          
+	          
+	       
+	          
+	          <!-- ROW 9-->
+	    <div class="col-xs-6 col-sm-3 col-m-3 sidebar-offcanvas" id="sidebar" role="navigation"><p class="blankspace"></p></div>
+	    
+	    	<div class="col-xs-6 col-sm-3 col-m-3">
+	          <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0001_White_House.jpg" class="img-responsive margin" alt="White House" onmouseover="this.src='images/LANDMARKS_FRAMED/_0001_White_House_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0001_White_House.jpg'"></a>
+			    </div>
+	        </div><!-- /.col-xs-12 main -->
+	        
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+				      <div class="photo">
+			      <a href="#"><img src="images/CITY_LANDMARKS/_0014_Country_Music_Hall_Of_Fame.jpg" class="img-responsive margin" alt="Country Music Hall of Fame" onmouseover="this.src='images/LANDMARKS_FRAMED/_0014_Country_Music_Hall_Of_Fame_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0014_Country_Music_Hall_Of_Fame.jpg'"></a>
+			    </div>
+		     </div><!-- /.col-xs-12 main -->
+	          
+	          <div class="col-xs-6 col-sm-3 col-m-3">
+			      <div class="photo">
 			      <a href="#"><img src="images/CITY_LANDMARKS/_0026_Empire_State_Building.jpg" class="img-responsive margin" alt="Empire State Building" onmouseover="this.src='images/LANDMARKS_FRAMED/_0026_Empire_State_Building_Framed.jpg'" onmouseout="this.src='images/CITY_LANDMARKS/_0026_Empire_State_Building.jpg'"></a>
 			    </div>
-			    
+	          </div><!-- /.col-xs-12 main -->
+	          
+	          
+    
+      </div> <!--END ROW-->
+  </div><!--/.container-->
+</div><!--/.page-container-->
+	 	
+	 	
+	 	<div id="cocktails-page-footer-margin"></div><!--A LITTLE CUSHION-->
+
 	
-			   		
-		 </div> <!-- END GRID -->
-		
-	</div> <!--END CONTAINER-->	
-		
-		<footer>
+	<footer>
 			<ul class="bottomnav">
 				  <li><span class="copyright">&copy blue crane studio, llc &nbsp; | &nbsp; built by steve mayne </span></li>
 				  <li><a href="https://www.facebook.com/postalmodernpaper/" target="_blank"><img src="images/SOCIAL_LOGOS/facebook-logo-png-white-center.png" height="20px"></a></li>
@@ -215,12 +307,10 @@
 				  <li><a href="https://society6.com/tamaramayne" target="_blank"><img src="images/SOCIAL_LOGOS/cart_large.png" height="20px"></a></li>
 				</ul>
 		</footer>
-		
-		
+	
+	</div> 
 	
 	
 	
-	
-
 </body>
-</html>
+</html>		
