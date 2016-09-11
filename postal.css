@@ -50,13 +50,40 @@ div.grid {
 }
 */
 
-
+/* {
+	border: 1px solid blue;
+} */
 
 div.container {
     width: 100%;
+    padding-right: 0px;
 }
 
+/* column rewrite */
 
+@media screen and (min-width: 769px) {
+  .page-container{ 
+	  margin-top: -50px;
+  }
+  
+  #sidebar-logo {
+	  margin-top: 40px;
+  }
+  
+  #sidebar {
+	  width: 15%;
+	  min-width: 200px;
+  }
+  .page-container {
+	  margin-right: -11%;
+  }
+  
+  * {
+	  overflow-x: hidden;
+  }
+}
+
+/* end columnd rewrite */
 
 @import url("http://bootswatch.com/yeti/bootstrap.min.css");
 
@@ -88,7 +115,7 @@ html {
 @media screen and (max-width: 320px) {
   #sidebar-logo {
 	  padding-left: 40px;
-	  width: 100px;
+	  width: 90px;
 	  }
 }
 
