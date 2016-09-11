@@ -81,6 +81,10 @@ div.container {
   * {
 	  overflow-x: hidden;
   }
+  
+  .contact, .about-text {
+	  margin-top: 40px;
+  }
 }
 
 /* end columnd rewrite */
@@ -329,15 +333,13 @@ ul.bottomnav li a {
 	padding-bottom: 40px;
 	font-family: 'Molengo', sans-serif;
 	font-size: 1em;
-	line-height: 1.1em;
+	line-height: 1.2em;
+	overflow: visible;
 }
 
 .contact a {
 	color: black;
 	text-decoration: underline;
-	font-size: inherit;
-	font-style: normal;
-	font-size: .95em;
 }
 /* end about page content*/
 
