@@ -467,5 +467,17 @@ ul.bottomnav li a {
 	}
 }
 
+/* fixes float issue on index.html */
+
+.clearfix {
+	display: none;
+}
+
+@media (width: 320px) {
+	.clearfix {
+		display: inline-block;
+	}	
+}
+
 
 
