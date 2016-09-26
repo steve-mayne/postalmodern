@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-  <title>Postal Modern - About</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="postal.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
-    
-    <script> //Google
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Postal Modern</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="postal.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/b668931025.js"></script> <!-- Font Awesome -->
+
+	<link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">	
+	
+	 <script> //Google
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -19,102 +21,97 @@
   ga('create', 'UA-83912612-1', 'auto');
   ga('send', 'pageview');
   </script>
-    
-    <script>
-    $(document).ready(function() {
-  $('[data-toggle=offcanvas]').click(function() {
-    $('.row-offcanvas').toggleClass('active');
-  });
-});
-    </script>
-    
-    
-    <script>
-	    $(window).scroll(function() {
-
-    if ($(this).scrollTop()>15)
-     {
-        $('#topnav').hide();
-     }
-    else
-     {
-      $('#topnav').fadeIn();
-     }
- });
-	</script>
-
-
+  
+	
+	
 </head>
 
 <body>
-	
-	<div class="page-container">
-  
-	<!-- top navbar -->
-    <div id="topnav" class="navbar  navbar-fixed-top" role="navigation">
-       <div class="container">
-    	<div class="navbar-header">
-           <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-           </button>
-          <a class="navbar-brand" href="#"></a>
-    	</div>
-       </div>
-    </div>
-      
-    <div class="container">
-      <div class="row row-offcanvas row-offcanvas-left">
-        
-        <!-- sidebar -->
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-	        <p><a href="index.html"><img src="images/BRAND_IDENTITY/LOGO/logo_6_cropped.jpg" id="sidebar-logo"></a></p>
-            <ul class="nav-list">
-              	<li><a href="about.html">About</a></li>
-			  	<li><a href="index.html">Landmarks</a></li>
-			    <li><a href="cocktails.html">Cocktails</a></li>
-			    <li><a href="https://society6.com/tamaramayne" target="_blank">Shop</a></li>              
-			</ul>
-        </div>
-  	
-        <!-- main area -->
-        <div class="col-xs-6 col-sm-5 contact">
-          <p><img class="hero" src="images/ABOUT/Tamara_Mayne_Postal_Modern_mono_sq.jpg">
-						<p><span style="font-size: 1.5em; marging-top:10px; line-height: 1.5em" >Contact:</span></p>
-						<p>tamara mayne, illustrator</p>
-						<p>postalmodernpaper [at] gmail.com</p>
-						<p><a href="https://society6.com/tamaramayne" target="_blank">shop</a></p>
-						<p><a href="https://www.instagram.com/postalmodernpaper/" target="_blank">instagram</a></p></p>
-        </div><!-- /.col-xs-12 main -->
-        
-          <div class="col-xs-6 col-sm-4 about-text">
-          <p>Postal Modern is the passion project of illustrator and designer, Tamara Mayne. The bold, colorful signature style of Postal 							Modern stems from a mix of influences from the art and design realms. Tamara's idea was to bring a playfulness to graphic illustration style — one 						inspired by iconography, simplicity, the art of hand-lettering, and the interplay of color.</p>
+
+
+	<div id="wrapper">
 		
-				<p>Tamara is also the founder and owner of Brooklyn Candle Studio. You can follow her work on <a href="https://www.instagram.com/postalmodernpaper/" target="_blank">Instagram</a> or visit her shop at <a href="https://society6.com/tamaramayne" target="_blank">Society6</a>.</p>
-        </div><!-- /.col-xs-12 main -->
-        
-        
-        
-    </div><!--/.row-->
-  </div><!--/.container-->
-</div><!--/.page-container-->
-	
-	<div id="about-page-footer-margin"></br></br></div><!--A LITTLE CUSHION-->
-	
-	<footer>
-			<ul class="bottomnav">
+		<div id="header">
+			<!-- top navbar -->
+			    <div id="topnav" class="navbar navbar-fixed-top" role="navigation">
+				       <div class="container">
+					    	<div class="navbar-header">
+						       <a href="index.html"><img id="header-brand" src="images/BRAND_IDENTITY/LOGO/logo_6_cropped.jpg"></a>
+					           	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#hamDrop">
+							        <i class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></i>
+								</button>
+								<!--the dropdown menu-->
+								<ul class="dropdown-menu" id="hamDrop">
+							   		<li><a href="about.html">About</a></li>
+								  	<li><a href="index.html">Landmarks</a></li>
+								    <li><a href="cocktails.html">Cocktails</a></li>
+								    <li><a href="product.html">Gallery View</a></li>
+								    <li><a href="https://society6.com/tamaramayne" target="_blank">Shop</a></li>
+					        	</ul>
+					    	</div> <!--end navbar-header div-->
+				       </div> <!--end navbar container div-->
+			    </div> <!--end topnav div-->
+			
+		</div><!-- #header -->
+		
+		<div id="content">
+			<div class="sidebar">
+				<p><a href="index.html"><img src="images/BRAND_IDENTITY/LOGO/logo_6_cropped.jpg" id="sidebar-logo"></a></p>
+	            <ul class="nav-list">
+	              	<li><a href="about.html">About</a></li>
+				  	<li><a href="index.html">Landmarks</a></li>
+				    <li><a href="cocktails.html">Cocktails</a></li>
+				    <li><a href="product.html">Gallery View</a></li>
+				    <li><a href="https://society6.com/tamaramayne" target="_blank">Shop</a></li>              
+				</ul>
+			</div>
+			
+			<div class="container-fluid">
+				<div class="row no-gutter">
+						<div class="col-xs-12 col-sm-6 col-md-6 about-text">
+							<p><img id="about-hero" src="images/ABOUT/Tamara_Mayne_Postal_Modern_mono_sq.jpg">
+							<p><span id="about-contact">Contact:</span></p>
+							<ul id="about-shown">
+								<li>tamara mayne, illustrator</li>
+								<li>postalmodernpaper [at] gmail.com</li>
+								<li><a href="https://society6.com/tamaramayne" target="_blank">shop</a></li>
+								<li><a href="https://www.instagram.com/postalmodernpaper/" target="_blank">instagram</a></li>
+							</ul>
+						</div>
+						
+						<div class="col-xs-11 col-sm-5 col-md-5 about-text">
+							<p class="bio">Postal Modern is the passion project of illustrator and designer, Tamara Mayne. The bold, colorful signature style of Postal Modern stems from a mix of influences from the art and design realms. Tamara's idea was to bring a playfulness to graphic illustration style — one inspired by iconography, simplicity, the art of hand-lettering, and the interplay of color.</p>
+							<p class="bio">Tamara is also the founder and owner of Brooklyn Candle Studio. You can follow her work on <a href="https://www.instagram.com/postalmodernpaper/" target="_blank">Instagram</a> or visit her shop at <a href="https://society6.com/tamaramayne" target="_blank">Society6</a>.</p>
+							
+							<div id="about-hidden">
+							<p id="contact-hidden">Contact:</p>
+							<ul>
+								<li>tamara mayne, illustrator</li>
+								<li>postalmodernpaper [at] gmail.com</li>
+								<li><a href="https://society6.com/tamaramayne" target="_blank">shop</a></li>
+								<li><a href="https://www.instagram.com/postalmodernpaper/" target="_blank">instagram</a></li>
+							</ul>
+							</div>
+
+						</div>
+						
+				</div> <!-- row-->
+			</div>
+			
+		</div><!-- #content -->
+		
+		<div id="footer">
+				<ul class="bottomnav">
 				  <li><span class="copyright">&copy blue crane studio, llc &nbsp; | &nbsp; built by steve mayne </span></li>
 				  <li><a href="https://www.facebook.com/postalmodernpaper/" target="_blank"><img src="images/SOCIAL_LOGOS/facebook-logo-png-white-center.png" height="20px"></a></li>
 				  <li><a href="https://www.instagram.com/postalmodernpaper/" target="_blank"><img src="images/SOCIAL_LOGOS/logo-instagram_2.png" height="15px" width="15px"></a></li>
 				  <li><a href="https://twitter.com/postalmodern" target="_blank"><img src="images/SOCIAL_LOGOS/Twitter-256.png" height="15px"></a></li>
 				  <li><a href="https://society6.com/tamaramayne" target="_blank"><img src="images/SOCIAL_LOGOS/cart_large.png" height="20px"></a></li>
 				</ul>
-		</footer>
-	
-	</div> 
-	
-	
+		</div><!-- #footer -->
+		
+	</div><!-- #wrapper -->
 	
 </body>
+
 </html>

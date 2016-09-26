@@ -1,221 +1,173 @@
-/* header {
-    padding: 1em;
-    color: white;
-    background-color: black;
-    clear: left;
-    text-align: center;
+		
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
 }
-*/
 
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+} 
 
 
-/* nav {
-    float: left;
-    max-width: 100px;
-    margin: 0;
-    padding: 1em;
-    color: black;
+#wrapper {
+	min-height:100%;
+	position:relative;
+	overflow-x: hidden;
+}
+
+#header {
+	height: 40px;
+	padding: 10px; /* ensures clearance of grid */
+	display: none;
+}
+
+/* top navigation -- hamburger */
+#top-nav {
+	border: none;
+	height: 60px;
+}
+
+
+.navbar-header {
+	height: 60px;
+}
+
+#header-brand {
+	height: 40px;
+	margin: 5px;
+	margin-top: 10px;
+}
+
+div.container {
+	height: 60px;
+}
+
+#hamDrop {
+	width: 100%;
+}
+
+#hamDrop li {
+	width: 100%;
 	font-family: 'Molengo', sans-serif;
 	font-weight: 300;
 	text-transform: lowercase;
 	line-height: 1.7em;
 }
+/* end top navigation -- hamburger */
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-	color: black;
-}
-   
-nav ul a {
-    text-decoration: none;
-    color: black;
+#content {
+	padding-bottom:100px; /* Height of the footer element */
 }
 
-
-div.grid {
-    margin-left: 170px;
-   
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
-    clear: none;
-     -webkit-column-count: 3; /* Chrome, Safari, Opera 
-    -moz-column-count: 3; /* Firefox 
-    column-count: 3;
-    -webkit-column-gap: 0px; /* Chrome, Safari, Opera 
-    -moz-column-gap: 0px; /* Firefox 
-    column-gap: 0px;
-}
-*/
-
-/* {
-	border: 1px solid blue;
-} */
-
-div.container {
-    width: 100%;
-    padding-right: 0px;
-}
-
-/* column rewrite */
-
-@media screen and (min-width: 769px) {
-  .page-container{ 
-	  margin-top: -50px;
-  }
-  
-  #sidebar-logo {
-	  margin-top: 40px;
-  }
-  
-  #sidebar {
-	  width: 15%;
-	  min-width: 200px;
-  }
-  .page-container {
-	  margin-right: -11%;
-  }
-  
-  * {
-	  overflow-x: hidden;
-  }
-  
-  .contact, .about-text {
-	  margin-top: 40px;
-  }
-}
-
-/* end columnd rewrite */
-
-@import url("http://bootswatch.com/yeti/bootstrap.min.css");
-
-@import url("http://bootswatch.com/paper/bootstrap.min.css");
-
-@import url("http://bootswatch.com/journal/bootstrap.min.css");
-
-@import url("http://bootswatch.com/darkly/bootstrap.min.css");
-
-@import url("http://bootswatch.com/cosmo/bootstrap.min.css");
-
-html {
-  height: 100%;
-  box-sizing: border-box;
-}
-
-#sidebar-logo {
-	width: 160px;
-	padding-left: 40px;
-}
-
-@media screen and (max-width: 768px) {
-  #sidebar-logo {
-	  width: 140px;
-	  padding-left: 40px;
-	  }
-}
-
-@media screen and (max-width: 320px) {
-  #sidebar-logo {
-	  padding-left: 40px;
-	  width: 90px;
-	  }
-}
-
-#top-nav {
-	border: none;
-}
-
-/*
-.text-center {
-  padding-top: 20px;
-}
-.col-xs-6 {
-  background-color: #fff;
-}*/
-
-
-#sidebar {
-	height: 100%;
-	padding-right: 0;
-	vertical-align: text-top;
-	text-align: left;
-	/* padding-top: 20px; */
-	
-}
-
-#sidebar a {
-	text-decoration: none;
-	color: black;
-	background-color: none;
-}
-
-#sidebar :hover {
-	color: black;
-	background: none;
-}
-
-#sidebar .nav {
-  width: 95%;
-  vertical-align: text-top;
-}
-
-.nav-list ul {
-	text-align: left;
-}
-
-.nav-list li {
-	list-style: none;
-  	font-family: 'Molengo', sans-serif;
-	font-weight: 300;
-	text-transform: lowercase;
-	line-height: 1.3em;
-	text-align: left;
-	padding-left: 0px;
-	margin-left: 0px;
-}
-
-#sidebar li :hover{
-  text-decoration: underline;
-}
-
-
-
-/* grid and photo layouts */
-
-.photo {
-	width:100%;
-}
-
-.cocktail {
-	width:100%;
-}
-
-
-.no-gutters {
-  margin-right: 0;
+.row.no-gutter {
   margin-left: 0;
+  margin-right: 0;
 }
-.no-gutters > [class^="col-"],
-.no-gutters > [class*=" col-"] {
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
   padding-right: 0;
   padding-left: 0;
 }
 
-.blankspace {
-	visibility: hidden;
+.grid {
+	height: 100%; /* this code ensures that grid blocks are full height and width */
+	width: 100%;
 }
 
-@media only screen and (max-width: 320px) {
-	.blankspace {
+
+.sidebar {
+	width: 200px;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	margin-top: 40px;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+.sidebar ul {
+	list-style-type: none;
+	margin-left: -10px;
+}
+
+.sidebar li, a {
+	font-family: 'Molengo', sans-serif; 
+	text-transform: lowercase;
+	color: black;
+}
+
+#sidebar-logo{
+	width: 120px;
+	margin-left: 30px;
+}
+
+/* Top Nav for smaller screen sizes */
+
+@media screen and (max-width: 768px) {
+	#header {
+		display: block;
+	}
+	
+	.sidebar {
 		display: none;
 	}
+
+	
+	.container-fluid {
+		width: 100% !important;
+	}
+		
+	.navbar-header {
+		background-color: white;
+		height: 60px;
+	}
+	.container {
+		height: 20px;
+	}
+	
+	#navbar-brand {
+	  display: inline-block;
+	  }
 }
+
+/* End Top Nav for smaller screen sizes */
+
+	
+.container-fluid {
+	width: calc(100% - 200px); /* sets up new boundaries for the responsive grid */
+	display: inline-block;
+	padding: 0;
+	margin-bottom: -42px; /* margin should be -5px height of footer to make it flush with content */
+}	
+
+/* code below helps clearfix when rows don't properly collapse 
+
+.col-lg-4:nth-child(3n+1){
+	clear: left;
+}
+
+.col-md-4:nth-child(3n+1){
+    clear: left;
+}
+
+.col-sm-4:nth-child(3n+1){
+	clear: none;
+}
+
+<!-- Add the extra clearfix for only the required viewport 
+						<div class="clearfix visible-md visible-lg"></div> -->
+
+*/
 
 
 /* footer styling */
-footer {
+#footer {
 	padding: 1em 1em 1em 0em;
 	color: white;
 	font-family: 'Molengo', sans-serif; 
@@ -227,7 +179,7 @@ footer {
 	background-color: black;
 	text-align: center;
 	vertical-align: middle;
-	height: 60px;
+	height: 35px;
 	clear: both;
 }
 
@@ -235,15 +187,7 @@ footer span.logo {
 	text-align: left;
 }
 
-#about-page-footer-margin {
-	margin: 10px 0 0 10px;
-	clear: both;
-}
 
-#cocktails-page-footer-margin {
-	clear: left;
-	height: 30px;
-}
 
 ul.bottomnav {
     width: 100%;
@@ -261,7 +205,6 @@ ul.bottomnav li {
     position:relative;
     padding-left: 5px;
     font-family: 'Molengo', sans-serif;
-
 }
 
 ul.bottomnav li a {
@@ -290,112 +233,239 @@ ul.bottomnav li a {
 
 @media only screen and (max-width: 535px) {
 	ul.bottomnav {
-		margin-left: -40px;
+		margin-left: -55px;
 	}
 }
 /* end footer styling */
 
 
-/* about page content */
+
+/* ABOUT PAGE */
+
+#about-hero {
+	width: calc(100% - 40px);
+}
+
 .about-text {
-    overflow: hidden;
 	font-family: 'Molengo', sans-serif;
-	padding: 0px 40px 0px 20px;
-	line-height: 1.3em;
-	font-size: 1.7em;
-	vertical-align: text-top;
-}
-
-@media only screen and (max-width: 768px) {
-  .about-text {
-    font-size: 1.3em;
-    line-height: 1.1em;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .about-text {
-    font-size: 1.1em;
-    line-height: 1.1em;
-    padding: 0px 20px 0px 10px;
-    margin-bottom: 20px;
-  }
-}
-
-
-.hero  {
-	width: 90%;
-	padding-bottom: 30px;
-	vertical-align: text-top;
-}
-
-.contact {
-	padding-bottom: 40px;
-	font-family: 'Molengo', sans-serif;
+	font-weight: 300;
 	font-size: 1em;
-	line-height: 1.2em;
-	overflow: visible;
+	height: 100%;
+	padding-left: 20px;
+	padding-right: 40px;
+	margin-top: 40px;
 }
 
-.contact a {
-	color: black;
+.about-text ul {
+	list-style-type: none;
+	margin-left: -40px;
+	margin-top: -10px;
+}
+
+#about-contact {
+	font-size: 1.5em; 
+	marging-top:10px; 
+	line-height: 1.5em;
+}
+
+#contact-hidden {
+	font-size: 1.5em; 
+	marging-top:10px; 
+	line-height: 1.5em;
+}
+
+.bio {
+	font-size: 1.8em;
+	vertical-align: top;
+	margin-top: -.4em;
+}
+
+#about-hidden {
+	display: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.about-text {
+		margin-left: 10px;
+		font-size: .9em;
+	}
+	.bio {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.bio {
+		font-size: 1.3em;
+	}
+}
+
+@media screen and (max-width: 320px){
+	#about-contact, #about-shown {
+		display: none;
+	}
+	#about-hidden { 
+		display: inline-block;
+	}
+	.about-text {
+		margin-top: 0px;
+	}
+	#about-hero {
+		margin-bottom: 10px;
+	}
+}
+
+
+/* PRODUCT PAGE */
+.carousel {
+	margin-top: 40px;
+}
+
+.product-photo { 
+	height: 100%;
+	width: 100%;
+}
+
+.product-caption {
+	font-family: 'Molengo', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1em;
+	height: 100%;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+.product-title {
+	text-transform: capitalize;
+	font-size: 1.6em;
+	margin-bottom: 1em;
+	margin-top: 3px;
+	line-height: 1em;
+}
+
+
+.location {
+	text-transform: lowercase;
+	margin-top: -10px;
+}
+
+
+#arrow-left {
+	float: left;
+}
+
+#arrow-right {
+	float: right;
+}
+
+.shop-print {
 	text-decoration: underline;
 }
-/* end about page content*/
 
-
-/* collapsed sidebar styles */
-.icon-bar {
-	color: black;
-	border: 1px solid black;
+.carousel-caption {
+	display: none;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+@media screen and (min-width: 1100px){
+	.arrows {
+		margin-bottom: 50px;
+	}
 }
 
-body {
-  padding-top: 51px; 
-  position: relative;
-  min-height: 100%;
+@media screen and (max-width: 768px) {
+	.carousel {
+		margin-top: 0px;
+		margin-left: 5px;
+	}
+	.arrows {
+		margin-left: 5px;
+	}
+	#product-fix {
+		margin-bottom: 20px;
+	}
 }
 
-.page-container {
-	margin-bottom: 30px;
-	clear: both;
+@media screen and (max-width: 550px) {
+	.product-title {
+		font-size: 1.4em;
+		line-height: 1.1em;
+	}
+	.location {
+		margin-top: -5px;
+	}
 }
 
-@media screen and (max-width: 767px) {
-  .row-offcanvas {
-    position: relative;
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
-  }
-  .row-offcanvas-right
-  .sidebar-offcanvas {
-    right: -41.6%;
-  }
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -41.6%;
-  }
-  .row-offcanvas-right.active {
-    right: 41.6%;
-  }
-  .row-offcanvas-left.active {
-    left: 41.6%;
-  }
-  .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-    width: 41.6%;
-  }
-  #sidebar {
-    padding-top:0;
-  }
-  
-  
+
+@media screen and (max-width: 320px) {
+	.carousel {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.arrows {
+		padding: 5px;
+	}
+	#arrow-right: {
+		float: none !important;
+		margin-right: 5px !important;
+		
+	}
+	.product-caption {
+		margin-top: 10px;
+	}
 }
+
+
+/* hack for the iPad navbar non-collapse issue */
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+/* fixes the top nav onscroll so it's edge-to-edge */
+@media (width: 768px){
+	.container {
+	background-color: white;
+	}
+}
+
+
+
